@@ -8,12 +8,13 @@
 ?>
 <!-- Nav -->
 <nav id="nav">
+    <i class="main-logo"></i>
     <ul>
         <li class="current">
-            <a href="#">Home</a>
+            <a href="#">HOME</a>
         </li>
         <li>
-            <a href="#">Who We Are</a>
+            <a href="#">WHO WE ARE</a>
             <ul>
                 <li><a href="#">Vision</a></li>
                 <li><a href="#">Declarations</a></li>
@@ -31,10 +32,10 @@
                 </li>-->
             </ul>
         </li>
-        <li><a href="left-sidebar.html">Resources</a></li>
-        <li><a href="right-sidebar.html">Media Center</a></li>
-        <li><a href="right-sidebar.html">Events</a></li>
-        <li><a href="no-sidebar.html">eGiving</a></li>
-        <li><a href="no-sidebar.html">Contact us</a></li>
+        <li><a href="left-sidebar.html">RESOURCES</a></li>
+        <li><a href="right-sidebar.html">MEDIA CENTER</a></li>
+        <li><a href="right-sidebar.html">EVENTS</a></li>
+        <li><a href="no-sidebar.html">eGIVING</a></li>
+        <li><a href="no-sidebar.html">CONTACT US</a></li>
     </ul>
 </nav>

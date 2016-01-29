@@ -5,12 +5,24 @@ body {
 }
 
 /* handles header section */
+#nav i.main-logo {
+    display: inherit;
+    margin: 0 auto;
+    background: url("../images/test-logo.png") no-repeat;
+    height: 96px;
+    width: 240px;
+    background-size: 240px;
+}
+
 #nav > ul {
     box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.2) !important;
+    background: rgba(255, 255, 255, 0.15) !important;
 }
 
 #nav > ul li a {
-    color: rgba(0, 0, 0, 0.9) !important;;
+    color: rgba(0, 0, 0, 2) !important;
+    font-weight: bold;
+    text-transform: none !important;
 }
 
 #nav > ul li:hover {
@@ -129,8 +141,8 @@ a li.fa-youtube-square:hover {
 }
 
 @media only screen and (max-width: 640px) {
-    .header-top .row .rhs > li .my-text {
-        display: none;
+    li span.my-text {
+        display: none !important;
     }
 
 
@@ -149,6 +161,10 @@ a li.fa-youtube-square:hover {
 
     .header-top .row .rhs li {
         display: block;
+    }
+
+    li span.my-text {
+        display: none !important;
     }
 
     /* /header section */
