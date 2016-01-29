@@ -9,8 +9,6 @@
 
 <?php $data['title'] = "Security Check Point"; ?>
 
-<?php $this->load->view('sections/header_nav'); ?>
-
 </div>
 </div>
 

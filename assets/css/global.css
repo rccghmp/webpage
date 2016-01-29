@@ -3,9 +3,115 @@ body {
     font-family: 'Raleway', sans-serif;
     margin:0;
 }
-#nav {
-    color: #000000 !important;
+
+/* handles header section */
+#nav > ul {
+    box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.2) !important;
 }
+
+#nav > ul li a {
+    color: rgba(0, 0, 0, 0.9) !important;;
+}
+
+#nav > ul li:hover {
+    background: rgba(255, 255, 255, 0.35) !important;
+}
+
+#nav > ul li a:hover {
+    color: #FF8380 !important;
+}
+
+
+
+a li.fa-facebook-square:hover {
+    color: #3B5998;;
+}
+a li.fa-twitter-square:hover {
+    color: #4099FF;
+}
+a li.fa-instagram:hover {
+    color: #3f729b;
+}
+a li.fa-google-plus-square:hover {
+    color: #dc4e41;
+}
+a li.fa-youtube-square:hover {
+    color: #cd201f;
+}
+
+
+.header-top {
+    background-color: #000000;
+    padding: 3px 0px;
+    font-size: 0.8em;
+}
+
+.header-top .row {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.header-top .row ul {
+    margin-bottom: 0px;
+}
+
+.header-top .row ul > a:not(:last-child) {
+    margin: 0px 5px;
+}
+
+.header-top .row ul > a:hover {
+    cursor: pointer;
+}
+
+.header-top .row .lhs {
+    font-size: 1.6em;
+}
+
+.header-top .row .rhs {
+    text-align: right;
+}
+
+.header-top .row .rhs li {
+    display: inline-block;
+    vertical-align: inherit;
+    line-height: 15px;
+}
+
+.header-top .row .rhs li:not(:last-child) {
+    margin-right: 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    padding-right: 10px;
+}
+
+/* /handles header section */
+
+
+
+
+/* handles footer */
+#footer-wrapper {
+
+}
+
+#footer-wrapper.wrapper  {
+    padding: 1em 0 0 0 !important;
+}
+
+#footer hr {
+    margin: 0.6em 0 0.6em 0 !important;
+}
+
+#footer-wrapper #copyright {
+    background: #000;
+    margin: 1em 0 0 0 !important;
+    margin-bottom: 0px !important;
+    color: #919499;
+}
+
+#footer-wrapper #copyright ul {
+    margin-bottom: 0px !important;
+}
+/* /handles footer */
 
 @media only screen and (max-width: 1280px) {
 
@@ -17,16 +123,45 @@ body {
 
 @media only screen and (max-width: 800px) {
 
+    #titleBar .toggle {
+        top: 24px !important;
+    }
 }
 
 @media only screen and (max-width: 640px) {
+    .header-top .row .rhs > li .my-text {
+        display: none;
+    }
+
+
+    /* handles footer */
+     section .row .my-cubes {
+         display: inline-block;
+         vertical-align: middle;
+         width: 45% !important;
+     }
+    /* /handles footer */
 
 }
 
 @media only screen and (max-width: 400px) {
+    /*header section */
+
+    .header-top .row .rhs li {
+        display: block;
+    }
+
+    /* /header section */
 
 }
 
 @media only screen and (max-width: 320px) {
+    /* handles footer */
+    section .row .my-cubes {
+        display: inline-block;
+        vertical-align: middle;
+        width: 100% !important;
+    }
+    /* /handles footer */
 
 }

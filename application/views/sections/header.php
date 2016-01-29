@@ -31,15 +31,13 @@
     <!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
 </head>
 <body class="homepage">
-<div id="page-wrapper">
 
+<?php $this->load->view('sections/header-sections/header-top'); ?>
+
+<div id="page-wrapper">
     <!-- Header -->
     <div id="header-wrapper" class="wrapper">
         <div id="header">
 
-            <!-- Logo -->
-            <div id="logo">
-                <h1><a href="index.html">Escape Velocity</a></h1>
-                <p>A free responsive site template by HTML5 UP</p>
-            </div>
+<?php $this->load->view('sections/header-sections/header-bottom'); ?>
 

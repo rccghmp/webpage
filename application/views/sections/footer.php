@@ -58,7 +58,7 @@
                 <!-- Contact -->
                 <section class="feature-list small">
                     <div class="row">
-                        <div class="6u 12u(mobile)">
+                        <div class="6u 12u(mobile) my-cubes">
                             <section>
                                 <h3 class="icon fa-home">Mailing Address</h3>
                                 <p>
@@ -68,7 +68,7 @@
                                 </p>
                             </section>
                         </div>
-                        <div class="6u 12u(mobile)">
+                        <div class="6u 12u(mobile) my-cubes">
                             <section>
                                 <h3 class="icon fa-comment">Social</h3>
                                 <p>
@@ -80,7 +80,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="6u 12u(mobile)">
+                        <div class="6u 12u(mobile) my-cubes">
                             <section>
                                 <h3 class="icon fa-envelope">Email</h3>
                                 <p>
@@ -88,7 +88,7 @@
                                 </p>
                             </section>
                         </div>
-                        <div class="6u 12u(mobile)">
+                        <div class="6u 12u(mobile) my-cubes">
                             <section>
                                 <h3 class="icon fa-phone">Phone</h3>
                                 <p>
@@ -101,11 +101,10 @@
 
             </div>
         </div>
-        <hr />
     </div>
     <div id="copyright">
         <ul>
-            <li>&copy; <?php echo $current_year; ?></li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            <li>&copy; <?php echo $current_year; ?></li><li>Design by: <a href="mailto:rccghmp1@gmail.com">RCCG HMP Tech Team.</a></li>
         </ul>
     </div>
 </div>
@@ -114,13 +113,13 @@
 
 <!-- Scripts -->
 
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.dropotron.min.js"></script>
-<script src="assets/js/skel.min.js"></script>
-<script src="assets/js/skel-viewport.min.js"></script>
-<script src="assets/js/util.js"></script>
-<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-<script src="assets/js/main.js"></script>
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/jquery.dropotron.min.js"></script>
+<script src="../assets/js/skel.min.js"></script>
+<script src="../assets/js/skel-viewport.min.js"></script>
+<script src="../assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="../assets/js/main.js"></script>
 
 </body>
 </html>
