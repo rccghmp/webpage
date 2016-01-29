@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6dd8f00d-48be-47df-8d2e-f896d40ea04f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/contacts.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/views/church/contacts.php" afterPath="$PROJECT_DIR$/application/views/contacts/enquiry.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/config.php" afterPath="$PROJECT_DIR$/application/config/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/global.css" afterPath="$PROJECT_DIR$/assets/css/global.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/sections/header-sections/header-bottom.php" afterPath="$PROJECT_DIR$/application/views/sections/header-sections/header-bottom.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/sections/header-sections/header-nav.php" afterPath="$PROJECT_DIR$/application/views/sections/header-sections/header-nav.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/sections/header-sections/header-top.php" afterPath="$PROJECT_DIR$/application/views/sections/header-sections/header-top.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="6dd8f00d-48be-47df-8d2e-f896d40ea04f" name="Default" comment="" />
     <ignored path="webpage.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -422,7 +413,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/license.txt">
+    <entry file="file://$PROJECT_DIR$/LICENSE.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
