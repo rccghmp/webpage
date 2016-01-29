@@ -27,11 +27,11 @@
                 </li>
                 <li>
                     <span class="fa fa-phone"></span>
-                    <span class="my-text"> (+234) 123 4456 349</span>
+                    <span class="my-text"> 0705majesty</span>
                 </li>
                 <li>
                     <span class="fa fa-location-arrow"></span>
-                    <span my-text>enquiry@rccghmp.org</span>
+                    <span my-text> enquiry@rccghmp.org</span>
                 </li>
             </ul>
         </div>

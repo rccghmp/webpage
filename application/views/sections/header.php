@@ -15,8 +15,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta id="MetaDescription" name="DESCRIPTION" content="HMP His Majesty's Place, The Redeemed Christian Church of God, Yaba Lagos, Nigeria">
+    <meta id="MetaKeywords" name="KEYWORDS" content="HMP, RCCG, Redeemed Christian Church of God, His Majesty's Place, His Majestys Place, Nigeria, Redeemed, Bisi Akande, Church, Parish, God, Jesus, Christ, Born-again, Salvation, Saviour, Trinity, Healing, Deliverance, Open Heavens, Prayer, PBA, E A Adeboye, Yaba, Lagos, DotNetNuke, DNN">
 
     <!-- Bootstrap core CSS -->
+    <link rel="shortcut icon" href="../assets/images/favicon.png">
+    <title>.:: RCCG His Majesty's Place | RCCGHMP</title>
 
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
 

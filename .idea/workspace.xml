@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dd8f00d-48be-47df-8d2e-f896d40ea04f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/banner11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/test-logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/banner.jpg" afterPath="$PROJECT_DIR$/assets/images/banner.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/global.css" afterPath="$PROJECT_DIR$/assets/css/global.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/sections/header-sections/header-nav.php" afterPath="$PROJECT_DIR$/application/views/sections/header-sections/header-nav.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/sections/header-sections/header-top.php" afterPath="$PROJECT_DIR$/application/views/sections/header-sections/header-top.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/sections/header.php" afterPath="$PROJECT_DIR$/application/views/sections/header.php" />
     </list>
     <ignored path="webpage.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,21 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="header-nav.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="header-nav.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/sections/header-sections/header-nav.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.125">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/sections/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.041666">
-              <caret line="41" column="69" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
+            <state vertical-scroll-proportion="0.43564355">
+              <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -53,48 +40,18 @@
       <file leaf-file-name="header-top.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/sections/header-sections/header-top.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.9166665">
-              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="33" />
+            <state vertical-scroll-proportion="-13.916667">
+              <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="global.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="global.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/global.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48795182">
-              <caret line="167" column="5" selection-start-line="167" selection-start-column="5" selection-end-line="167" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1612" column="22" selection-start-line="1612" selection-start-column="22" selection-end-line="1612" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/sections/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.2916665">
-              <caret line="102" column="14" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header-bottom.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/sections/header-sections/header-bottom.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.625">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -113,13 +70,13 @@
         <option value="$PROJECT_DIR$/application/controllers/church.php" />
         <option value="$PROJECT_DIR$/application/views/sections/header_nav.php" />
         <option value="$PROJECT_DIR$/application/views/church/homepage/index.php" />
-        <option value="$PROJECT_DIR$/application/views/sections/header.php" />
         <option value="$PROJECT_DIR$/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/application/views/sections/header-sections/header-top.php" />
         <option value="$PROJECT_DIR$/application/views/sections/footer.php" />
         <option value="$PROJECT_DIR$/application/views/sections/header-sections/header-bottom.php" />
-        <option value="$PROJECT_DIR$/application/views/sections/header-sections/header-nav.php" />
+        <option value="$PROJECT_DIR$/application/views/sections/header.php" />
         <option value="$PROJECT_DIR$/assets/css/global.css" />
+        <option value="$PROJECT_DIR$/application/views/sections/header-sections/header-top.php" />
+        <option value="$PROJECT_DIR$/application/views/sections/header-sections/header-nav.php" />
       </list>
     </option>
   </component>
@@ -558,7 +515,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/sections/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.2916665">
+        <state vertical-scroll-proportion="0.34653464">
           <caret line="102" column="14" selection-start-line="102" selection-start-column="14" selection-end-line="102" selection-end-column="14" />
           <folding />
         </state>
@@ -586,7 +543,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/sections/header-sections/header-bottom.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625">
+        <state vertical-scroll-proportion="0.26732674">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
@@ -594,40 +551,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.6238185">
           <caret line="1612" column="22" selection-start-line="1612" selection-start-column="22" selection-end-line="1612" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/sections/header-sections/header-nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/sections/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.041666">
-          <caret line="41" column="69" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/sections/header-sections/header-top.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.9166665">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.38613862">
+          <caret line="18" column="335" selection-start-line="18" selection-start-column="335" selection-end-line="18" selection-end-column="335" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/global.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48795182">
-          <caret line="167" column="5" selection-start-line="167" selection-start-column="5" selection-end-line="167" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/sections/header-sections/header-top.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.916667">
+          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/sections/header-sections/header-nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43564355">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
           <folding />
         </state>
       </provider>

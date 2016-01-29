@@ -32,9 +32,30 @@
                 </li>-->
             </ul>
         </li>
-        <li><a href="left-sidebar.html">RESOURCES</a></li>
-        <li><a href="right-sidebar.html">MEDIA CENTER</a></li>
-        <li><a href="right-sidebar.html">EVENTS</a></li>
+        <li><a href="left-sidebar.html">RESOURCES</a>
+            <ul>
+                <li><a href="#">Sports Arena</a></li>
+                <li><a href="#">Kitchen Corner</a></li>
+                <li><a href="#">Empowerment</a></li>
+                <li><a href="#">Politics</a></li>
+            </ul>
+        </li>
+        <li><a href="#">MEDIA CENTER</a>
+            <ul>
+                <li><a href="#">Visuals</a></li>
+                <li><a href="#">Audio</a></li>
+                <li><a href="#">Billionaire</a></li>
+                <li><a href="#">Downloads</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </li>
+        <li><a href="right-sidebar.html">EVENTS</a>
+            <ul>
+                <li><a href="#">National Calendar</a></li>
+                <li><a href="#">Upcoming</a></li>
+                <li><a href="#">Youth Affairs</a></li>
+            </ul>
+        </li>
         <li><a href="no-sidebar.html">eGIVING</a></li>
         <li><a href="no-sidebar.html">CONTACT US</a></li>
     </ul>
