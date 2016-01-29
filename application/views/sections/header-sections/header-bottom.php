@@ -9,7 +9,7 @@
 
 <!-- Logo -->
 <div id="logo">
-    <h1><a href="index.html">Glad To See You</a></h1>
+    <h1><a href="index">Glad To See You</a></h1>
     <p>RCCG His Majesty's Place</p>
 </div>
 

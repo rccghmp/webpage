@@ -8,10 +8,12 @@
 ?>
 <!-- Nav -->
 <nav id="nav">
-    <i class="main-logo"></i>
+    <a href="<?php echo base_url() ?>church/" class="site-logo">
+        <i class="main-logo"></i>
+    </a>
     <ul>
         <li class="current">
-            <a href="#">HOME</a>
+            <a href="<?php echo base_url() ?>church/">HOME</a>
         </li>
         <li>
             <a href="#">WHO WE ARE</a>
@@ -19,7 +21,7 @@
                 <li><a href="#">Vision</a></li>
                 <li><a href="#">Declarations</a></li>
                 <li><a href="#">Our Pastors</a></li>
-                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Service Days</a></li>
                 <!--<li>
                     <a href="#">Sed consequat</a>
                     <ul>
@@ -32,7 +34,7 @@
                 </li>-->
             </ul>
         </li>
-        <li><a href="left-sidebar.html">RESOURCES</a>
+        <li><a href="#">RESOURCES</a>
             <ul>
                 <li><a href="#">Sports Arena</a></li>
                 <li><a href="#">Kitchen Corner</a></li>
@@ -49,14 +51,14 @@
                 <li><a href="#">Careers</a></li>
             </ul>
         </li>
-        <li><a href="right-sidebar.html">EVENTS</a>
+        <li><a href="#">EVENTS</a>
             <ul>
                 <li><a href="#">National Calendar</a></li>
                 <li><a href="#">Upcoming</a></li>
                 <li><a href="#">Youth Affairs</a></li>
             </ul>
         </li>
-        <li><a href="no-sidebar.html">eGIVING</a></li>
-        <li><a href="no-sidebar.html">CONTACT US</a></li>
+        <li><a href="#">eGIVING</a></li>
+        <li><a href="<?php echo base_url() ?>contacts/enquiry">CONTACT US</a></li>
     </ul>
 </nav>

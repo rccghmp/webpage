@@ -4,13 +4,22 @@ body {
     font-family: 'montserrat-regular', 'Raleway', sans-serif;
 }
 
+.wrapper {
+    padding: 3em 0 5em 0 !important;
+}
+
 /* handles header section */
 .header-top {
     color: rgba(255, 255, 255, 0.9) !important;
     font-weight: 300;
 }
 
-#nav i.main-logo {
+#nav .site-logo, #nav i.main-logo {
+    display: inherit;
+    margin: 0 auto;
+}
+
+#nav .site-logo i.main-logo {
     display: inherit;
     margin: 0 auto;
     background: url("../images/test-logo.png") no-repeat;
@@ -139,6 +148,9 @@ a li.fa-youtube-square:hover {
 }
 
 @media only screen and (max-width: 800px) {
+    .wrapper {
+        padding: 3em 0 5em 0 !important;
+    }
 
     #titleBar .toggle {
         top: 24px !important;
