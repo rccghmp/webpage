@@ -9,7 +9,7 @@ map = new GMaps({
     el: '#map',
     lat: 6.5055633,
     lng: 3.3805212,
-    zoom: 10,
+    zoom: 17,
     zoomControl : true,
     zoomControlOpt: { style : 'SMALL', position: 'TOP_LEFT' },
     panControl : false,
@@ -54,4 +54,3 @@ map.setOptions({
 // title: '5th Avenue',
 //  	infoWindow: { content: '<p>You can add your address 1 here</p>' }
 // });
-

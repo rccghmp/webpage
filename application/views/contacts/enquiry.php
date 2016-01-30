@@ -7,9 +7,6 @@
  */
 ?>
 
-<script src="../assets/js/gmaps.js"></script>
-<script src="../assets/js/contact-enquiry.js"></script>
-
 <?php $data['title'] = "Security Check Point"; ?>
 
 </div>
@@ -26,3 +23,8 @@
         </div> <!-- end map -->
     </div>
 </div>
+
+
+<script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
+<script src="../assets/js/gmaps.js"></script>
+<script src="../assets/js/contact-enquiry.js"></script>

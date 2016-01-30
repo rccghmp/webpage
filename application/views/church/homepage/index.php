@@ -16,7 +16,6 @@
 <div id="intro-wrapper" class="wrapper style1">
     <div class="title">Here We Are</div>
     <section id="intro" class="container">
-        <p class="style1">So in case you were wondering what this is all about ...</p>
         <p class="style2">
             Never let success get to your head <br class="mobile-hide" />and never let failure gets to your heart
         </p>
@@ -30,8 +29,8 @@
     <div id="main" class="container">
 
         <!-- Image -->
-        <a href="#" class="image featured">
-            <img src="../assets/images/uploads/201602hgs.jpg" alt="" />
+        <a href="https://trccg.org/" target="_blank" class="image featured">
+            <img src="../assets/images/uploads/201602hgs.jpg" alt="February Holy Ghost Service - Arresting the Arrester" />
         </a>
 
         <!-- Features -->
@@ -43,6 +42,12 @@
                 <div class="row">
                     <div class="6u 12u(mobile)">
                         <section>
+                            <h3 class="icon fa-lightbulb-o">Every Morning [06:30am - 07:15am]</h3>
+                            <p>Proverbs 8:17 - I love them that love me; and those that seek me early shall find me. </p>
+                        </section>
+                    </div>
+                    <div class="6u 12u(mobile)">
+                        <section>
                             <h3 class="icon fa-book">Tuesdays [Bible Study | 06:00pm]</h3>
                             <p>2 Timothy 2:15 - Study to shew thyself approved unto God, a workman that needeth not to be ashamed, rightly dividing the word of truth. </p>
                         </section>
@@ -50,15 +55,17 @@
                     <div class="6u 12u(mobile)">
                         <section>
                             <h3 class="icon fa-medkit">Thursdays [Faith Clinic | 06:00pm]</h3>
+                            <p>1 Pet. 2:24) - Who Himself bore our sins in His own body on the tree, that we, having died to sins, might live for righteousness—by whose stripes you were healed. </p>
+                        </section>
+                    </div>
+                    <div class="6u 12u(mobile)">
+                        <section>
+                            <h3 class="icon fa-gift">Sunday Service [07:45am - 10:30am]</h3>
                             <p>2 Timothy 2:15 - Study to shew thyself approved unto God, a workman that needeth not to be ashamed, rightly dividing the word of truth. </p>
                         </section>
                     </div>
                 </div>
             </div>
-            <ul class="actions actions-centered">
-                <!--<li><a href="#" class="button style1 big">Get Started</a></li>-->
-                <li><a href="#" class="button style2 big">More Info</a></li>
-            </ul>
         </section>
 
     </div>

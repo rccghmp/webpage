@@ -135,11 +135,15 @@ a li.fa-youtube-square:hover {
     background: #000;
     margin: 1em 0 0 0 !important;
     margin-bottom: 0px !important;
-    color: #919499;
+    color: #f7f7f7;
 }
 
 #footer-wrapper #copyright ul {
     margin-bottom: 0px !important;
+}
+
+.smoothscroll i.fa {
+    padding-top: 14px;
 }
 /* /handles footer */
 
@@ -172,6 +176,12 @@ a li.fa-youtube-square:hover {
     border-radius: 3px;
 }
 #go-top a:hover { background: #165622; }
+
+/* handles the google map on contacts page*/
+#map {
+    height: 300px !important;
+}
+/* /handles the google map on contacts page*/
 
 
 @media only screen and (max-width: 1280px) {
@@ -208,6 +218,12 @@ a li.fa-youtube-square:hover {
 
     /* Go To Top Button */
     #go-top { right: 15px; }
+
+    /* handles the google map on contacts page*/
+    #map {
+        height: 200px !important;
+    }
+    /* /handles the google map on contacts page*/
 
 }
 

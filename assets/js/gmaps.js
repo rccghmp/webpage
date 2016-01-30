@@ -42,9 +42,9 @@ var replace_object = function(obj, replace) {
 
 var array_map = function(array, callback) {
   var original_callback_params = Array.prototype.slice.call(arguments, 2),
-      array_return = [],
-      array_length = array.length,
-      i;
+          array_return = [],
+          array_length = array.length,
+          i;
 
   if (Array.prototype.map && array.map === Array.prototype.map) {
     array_return = Array.prototype.map.call(array, function(item) {
@@ -67,7 +67,7 @@ var array_map = function(array, callback) {
 
 var array_flat = function(array) {
   var new_array = [],
-      i;
+          i;
 
   for (i = 0; i < array.length; i++) {
     new_array = new_array.concat(array[i]);
@@ -78,7 +78,7 @@ var array_flat = function(array) {
 
 var coordsToLatLngs = function(coords, useGeoJSON) {
   var first_coord = coords[0],
-      second_coord = coords[1];
+          second_coord = coords[1];
 
   if (useGeoJSON) {
     first_coord = coords[1];
@@ -105,7 +105,7 @@ var arrayToLatLng = function(coords, useGeoJSON) {
 
 var getElementById = function(id, context) {
   var element,
-  id = id.replace('#', '');
+          id = id.replace('#', '');
 
   if ('jQuery' in this && context) {
     element = $("#" + id, context)[0];
@@ -118,7 +118,7 @@ var getElementById = function(id, context) {
 
 var findAbsolutePosition = function(obj)  {
   var curleft = 0,
-      curtop = 0;
+          curtop = 0;
 
   if (obj.offsetParent) {
     do {
@@ -140,44 +140,44 @@ var GMaps = (function(global) {
     options.mapType = options.mapType || 'roadmap';
 
     var self = this,
-        i,
-        events_that_hide_context_menu = ['bounds_changed', 'center_changed', 'click', 'dblclick', 'drag', 'dragend', 'dragstart', 'idle', 'maptypeid_changed', 'projection_changed', 'resize', 'tilesloaded', 'zoom_changed'],
-        events_that_doesnt_hide_context_menu = ['mousemove', 'mouseout', 'mouseover'],
-        options_to_be_deleted = ['el', 'lat', 'lng', 'mapType', 'width', 'height', 'markerClusterer', 'enableNewStyle'],
-        container_id = options.el || options.div,
-        markerClustererFunction = options.markerClusterer,
-        mapType = google.maps.MapTypeId[options.mapType.toUpperCase()],
-        map_center = new google.maps.LatLng(options.lat, options.lng),
-        zoomControl = options.zoomControl || true,
-        zoomControlOpt = options.zoomControlOpt || {
-          style: 'DEFAULT',
-          position: 'TOP_LEFT'
-        },
-        zoomControlStyle = zoomControlOpt.style || 'DEFAULT',
-        zoomControlPosition = zoomControlOpt.position || 'TOP_LEFT',
-        panControl = options.panControl || true,
-        mapTypeControl = options.mapTypeControl || true,
-        scaleControl = options.scaleControl || true,
-        streetViewControl = options.streetViewControl || true,
-        overviewMapControl = overviewMapControl || true,
-        map_options = {},
-        map_base_options = {
-          zoom: this.zoom,
-          center: map_center,
-          mapTypeId: mapType
-        },
-        map_controls_options = {
-          panControl: panControl,
-          zoomControl: zoomControl,
-          zoomControlOptions: {
-            style: google.maps.ZoomControlStyle[zoomControlStyle],
-            position: google.maps.ControlPosition[zoomControlPosition]
-          },
-          mapTypeControl: mapTypeControl,
-          scaleControl: scaleControl,
-          streetViewControl: streetViewControl,
-          overviewMapControl: overviewMapControl
-        };
+            i,
+            events_that_hide_context_menu = ['bounds_changed', 'center_changed', 'click', 'dblclick', 'drag', 'dragend', 'dragstart', 'idle', 'maptypeid_changed', 'projection_changed', 'resize', 'tilesloaded', 'zoom_changed'],
+            events_that_doesnt_hide_context_menu = ['mousemove', 'mouseout', 'mouseover'],
+            options_to_be_deleted = ['el', 'lat', 'lng', 'mapType', 'width', 'height', 'markerClusterer', 'enableNewStyle'],
+            container_id = options.el || options.div,
+            markerClustererFunction = options.markerClusterer,
+            mapType = google.maps.MapTypeId[options.mapType.toUpperCase()],
+            map_center = new google.maps.LatLng(options.lat, options.lng),
+            zoomControl = options.zoomControl || true,
+            zoomControlOpt = options.zoomControlOpt || {
+                      style: 'DEFAULT',
+                      position: 'TOP_LEFT'
+                    },
+            zoomControlStyle = zoomControlOpt.style || 'DEFAULT',
+            zoomControlPosition = zoomControlOpt.position || 'TOP_LEFT',
+            panControl = options.panControl || true,
+            mapTypeControl = options.mapTypeControl || true,
+            scaleControl = options.scaleControl || true,
+            streetViewControl = options.streetViewControl || true,
+            overviewMapControl = overviewMapControl || true,
+            map_options = {},
+            map_base_options = {
+              zoom: this.zoom,
+              center: map_center,
+              mapTypeId: mapType
+            },
+            map_controls_options = {
+              panControl: panControl,
+              zoomControl: zoomControl,
+              zoomControlOptions: {
+                style: google.maps.ZoomControlStyle[zoomControlStyle],
+                position: google.maps.ControlPosition[zoomControlPosition]
+              },
+              mapTypeControl: mapTypeControl,
+              scaleControl: scaleControl,
+              streetViewControl: streetViewControl,
+              overviewMapControl: overviewMapControl
+            };
 
     if (typeof(options.el) === 'string' || typeof(options.div) === 'string') {
       this.el = getElementById(container_id, options.context);
@@ -236,7 +236,7 @@ var GMaps = (function(global) {
 
     var buildContextMenuHTML = function(control, e) {
       var html = '',
-          options = window.context_menu[self.el.id][control];
+              options = window.context_menu[self.el.id][control];
 
       for (var i in options){
         if (options.hasOwnProperty(i)) {
@@ -249,12 +249,12 @@ var GMaps = (function(global) {
       if (!getElementById('gmaps_context_menu')) return;
 
       var context_menu_element = getElementById('gmaps_context_menu');
-      
+
       context_menu_element.innerHTML = html;
 
       var context_menu_items = context_menu_element.getElementsByTagName('a'),
-          context_menu_items_count = context_menu_items.length
-          i;
+              context_menu_items_count = context_menu_items.length
+      i;
 
       for (i = 0; i < context_menu_items_count; i++) {
         var context_menu_item = context_menu_items[i];
@@ -271,8 +271,8 @@ var GMaps = (function(global) {
       }
 
       var position = findAbsolutePosition.apply(this, [self.el]),
-          left = position[0] + e.pixel.x - 15,
-          top = position[1] + e.pixel.y- 15;
+              left = position[0] + e.pixel.x - 15,
+              top = position[1] + e.pixel.y- 15;
 
       context_menu_element.style.left = left + "px";
       context_menu_element.style.top = top + "px";
@@ -286,11 +286,11 @@ var GMaps = (function(global) {
 
         var overlay = new google.maps.OverlayView();
         overlay.setMap(self.map);
-        
+
         overlay.draw = function() {
           var projection = overlay.getProjection(),
-              position = e.marker.getPosition();
-          
+                  position = e.marker.getPosition();
+
           e.pixel = projection.fromLatLngToContainerPixel(position);
 
           buildContextMenuHTML(control, e);
@@ -305,7 +305,7 @@ var GMaps = (function(global) {
       window.context_menu[self.el.id][options.control] = {};
 
       var i,
-          ul = doc.createElement('ul');
+              ul = doc.createElement('ul');
 
       for (i in options.options) {
         if (options.options.hasOwnProperty(i)) {
@@ -392,8 +392,8 @@ var GMaps = (function(global) {
 
     this.fitZoom = function() {
       var latLngs = [],
-          markers_length = this.markers.length,
-          i;
+              markers_length = this.markers.length,
+              i;
 
       for (i = 0; i < markers_length; i++) {
         latLngs.push(this.markers[i].getPosition());
@@ -440,7 +440,7 @@ var GMaps = (function(global) {
     };
 
     var native_methods = [],
-        method;
+            method;
 
     for (method in this.map) {
       if (typeof(this.map[method]) == 'function' && !this[method]) {
@@ -504,7 +504,7 @@ GMaps.prototype.addControl = function(options) {
 
   var control = this.createControl(options);
   this.controls.push(control);
-  
+
   this.map.controls[position].push(control);
 
   return control;
@@ -516,13 +516,13 @@ GMaps.prototype.createMarker = function(options) {
   }
 
   var self = this,
-      details = options.details,
-      fences = options.fences,
-      outside = options.outside,
-      base_options = {
-        position: new google.maps.LatLng(options.lat, options.lng),
-        map: null
-      };
+          details = options.details,
+          fences = options.fences,
+          outside = options.outside,
+          base_options = {
+            position: new google.maps.LatLng(options.lat, options.lng),
+            map: null
+          };
 
   delete options.lat;
   delete options.lng;
@@ -530,7 +530,7 @@ GMaps.prototype.createMarker = function(options) {
   delete options.outside;
 
   var marker_options = extend_object(base_options, options),
-      marker = new google.maps.Marker(marker_options);
+          marker = new google.maps.Marker(marker_options);
 
   marker.fences = fences;
 
@@ -571,7 +571,7 @@ GMaps.prototype.createMarker = function(options) {
           if(!me.pixel){
             me.pixel = map.getProjection().fromLatLngToPoint(me.latLng)
           }
-          
+
           options[name].apply(this, [me]);
         });
       }
@@ -695,7 +695,7 @@ GMaps.prototype.removeMarkers = function(collection) {
 
 GMaps.prototype.drawOverlay = function(options) {
   var overlay = new google.maps.OverlayView(),
-      auto_show = true;
+          auto_show = true;
 
   overlay.setMap(this.map);
 
@@ -717,10 +717,10 @@ GMaps.prototype.drawOverlay = function(options) {
     if (!options.layer) {
       options.layer = 'overlayLayer';
     }
-    
+
     var panes = this.getPanes(),
-        overlayLayer = panes[options.layer],
-        stop_overlay_events = ['contextmenu', 'DOMMouseScroll', 'dblclick', 'mousedown'];
+            overlayLayer = panes[options.layer],
+            stop_overlay_events = ['contextmenu', 'DOMMouseScroll', 'dblclick', 'mousedown'];
 
     overlayLayer.appendChild(el);
 
@@ -743,15 +743,15 @@ GMaps.prototype.drawOverlay = function(options) {
 
   overlay.draw = function() {
     var projection = this.getProjection(),
-        pixel = projection.fromLatLngToDivPixel(new google.maps.LatLng(options.lat, options.lng));
+            pixel = projection.fromLatLngToDivPixel(new google.maps.LatLng(options.lat, options.lng));
 
     options.horizontalOffset = options.horizontalOffset || 0;
     options.verticalOffset = options.verticalOffset || 0;
 
     var el = overlay.el,
-        content = el.children[0],
-        content_height = content.clientHeight,
-        content_width = content.clientWidth;
+            content = el.children[0],
+            content_height = content.clientHeight,
+            content_width = content.clientWidth;
 
     switch (options.verticalAlign) {
       case 'top':
@@ -823,7 +823,7 @@ GMaps.prototype.removeOverlays = function() {
 
 GMaps.prototype.drawPolyline = function(options) {
   var path = [],
-      points = options.path;
+          points = options.path;
 
   if (points.length) {
     if (points[0][0] === undefined) {
@@ -916,7 +916,7 @@ GMaps.prototype.drawCircle = function(options) {
   delete options.lng;
 
   var polygon = new google.maps.Circle(options),
-      polygon_events = ['click', 'dblclick', 'mousedown', 'mousemove', 'mouseout', 'mouseover', 'mouseup', 'rightclick'];
+          polygon_events = ['click', 'dblclick', 'mousedown', 'mousemove', 'mouseout', 'mouseover', 'mouseup', 'rightclick'];
 
   for (var ev = 0; ev < polygon_events.length; ev++) {
     (function(object, name) {
@@ -939,14 +939,14 @@ GMaps.prototype.drawRectangle = function(options) {
   }, options);
 
   var latLngBounds = new google.maps.LatLngBounds(
-    new google.maps.LatLng(options.bounds[0][0], options.bounds[0][1]),
-    new google.maps.LatLng(options.bounds[1][0], options.bounds[1][1])
+          new google.maps.LatLng(options.bounds[0][0], options.bounds[0][1]),
+          new google.maps.LatLng(options.bounds[1][0], options.bounds[1][1])
   );
 
   options.bounds = latLngBounds;
 
   var polygon = new google.maps.Rectangle(options),
-      polygon_events = ['click', 'dblclick', 'mousedown', 'mousemove', 'mouseout', 'mouseover', 'mouseup', 'rightclick'];
+          polygon_events = ['click', 'dblclick', 'mousedown', 'mousemove', 'mouseout', 'mouseover', 'mouseup', 'rightclick'];
 
   for (var ev = 0; ev < polygon_events.length; ev++) {
     (function(object, name) {
@@ -987,7 +987,7 @@ GMaps.prototype.drawPolygon = function(options) {
   }
 
   var polygon = new google.maps.Polygon(options),
-      polygon_events = ['click', 'dblclick', 'mousedown', 'mousemove', 'mouseout', 'mouseover', 'mouseup', 'rightclick'];
+          polygon_events = ['click', 'dblclick', 'mousedown', 'mousemove', 'mouseout', 'mouseover', 'mouseup', 'rightclick'];
 
   for (var ev = 0; ev < polygon_events.length; ev++) {
     (function(object, name) {
@@ -1033,7 +1033,7 @@ GMaps.prototype.getFromFusionTables = function(options) {
   delete options.events;
 
   var fusion_tables_options = options,
-      layer = new google.maps.FusionTablesLayer(fusion_tables_options);
+          layer = new google.maps.FusionTablesLayer(fusion_tables_options);
 
   for (var ev in events) {
     (function(object, name) {
@@ -1057,13 +1057,13 @@ GMaps.prototype.loadFromFusionTables = function(options) {
 
 GMaps.prototype.getFromKML = function(options) {
   var url = options.url,
-      events = options.events;
+          events = options.events;
 
   delete options.url;
   delete options.events;
 
   var kml_options = options,
-      layer = new google.maps.KmlLayer(url, kml_options);
+          layer = new google.maps.KmlLayer(url, kml_options);
 
   for (var ev in events) {
     (function(object, name) {
@@ -1102,53 +1102,53 @@ GMaps.prototype.addLayer = function(layerName, options) {
     case 'bicycling': this.singleLayers.bicycling = layer = new google.maps.BicyclingLayer();
       break;
     case 'panoramio':
-        this.singleLayers.panoramio = layer = new google.maps.panoramio.PanoramioLayer();
-        layer.setTag(options.filter);
-        delete options.filter;
+      this.singleLayers.panoramio = layer = new google.maps.panoramio.PanoramioLayer();
+      layer.setTag(options.filter);
+      delete options.filter;
 
-        //click event
-        if (options.click) {
-          google.maps.event.addListener(layer, 'click', function(event) {
-            options.click(event);
-            delete options.click;
-          });
-        }
+      //click event
+      if (options.click) {
+        google.maps.event.addListener(layer, 'click', function(event) {
+          options.click(event);
+          delete options.click;
+        });
+      }
       break;
-      case 'places':
-        this.singleLayers.places = layer = new google.maps.places.PlacesService(this.map);
+    case 'places':
+      this.singleLayers.places = layer = new google.maps.places.PlacesService(this.map);
 
-        //search and  nearbySearch callback, Both are the same
-        if (options.search || options.nearbySearch) {
-          var placeSearchRequest  = {
-            bounds : options.bounds || null,
-            keyword : options.keyword || null,
-            location : options.location || null,
-            name : options.name || null,
-            radius : options.radius || null,
-            rankBy : options.rankBy || null,
-            types : options.types || null
-          };
+      //search and  nearbySearch callback, Both are the same
+      if (options.search || options.nearbySearch) {
+        var placeSearchRequest  = {
+          bounds : options.bounds || null,
+          keyword : options.keyword || null,
+          location : options.location || null,
+          name : options.name || null,
+          radius : options.radius || null,
+          rankBy : options.rankBy || null,
+          types : options.types || null
+        };
 
-          if (options.search) {
-            layer.search(placeSearchRequest, options.search);
-          }
-
-          if (options.nearbySearch) {
-            layer.nearbySearch(placeSearchRequest, options.nearbySearch);
-          }
+        if (options.search) {
+          layer.search(placeSearchRequest, options.search);
         }
 
-        //textSearch callback
-        if (options.textSearch) {
-          var textSearchRequest  = {
-            bounds : options.bounds || null,
-            location : options.location || null,
-            query : options.query || null,
-            radius : options.radius || null
-          };
-
-          layer.textSearch(textSearchRequest, options.textSearch);
+        if (options.nearbySearch) {
+          layer.nearbySearch(placeSearchRequest, options.nearbySearch);
         }
+      }
+
+      //textSearch callback
+      if (options.textSearch) {
+        var textSearchRequest  = {
+          bounds : options.bounds || null,
+          location : options.location || null,
+          query : options.query || null,
+          radius : options.radius || null
+        };
+
+        layer.textSearch(textSearchRequest, options.textSearch);
+      }
       break;
   }
 
@@ -1166,9 +1166,9 @@ GMaps.prototype.addLayer = function(layerName, options) {
 
 GMaps.prototype.removeLayer = function(layer) {
   if (typeof(layer) == "string" && this.singleLayers[layer] !== undefined) {
-     this.singleLayers[layer].setMap(null);
+    this.singleLayers[layer].setMap(null);
 
-     delete this.singleLayers[layer];
+    delete this.singleLayers[layer];
   }
   else {
     for (var i = 0; i < this.layers.length; i++) {
@@ -1208,12 +1208,12 @@ GMaps.prototype.getRoutes = function(options) {
   }
 
   var base_options = {
-        avoidHighways: false,
-        avoidTolls: false,
-        optimizeWaypoints: false,
-        waypoints: []
-      },
-      request_options =  extend_object(base_options, options);
+            avoidHighways: false,
+            avoidTolls: false,
+            optimizeWaypoints: false,
+            waypoints: []
+          },
+          request_options =  extend_object(base_options, options);
 
   request_options.origin = /string/.test(typeof options.origin) ? options.origin : new google.maps.LatLng(options.origin[0], options.origin[1]);
   request_options.destination = /string/.test(typeof options.destination) ? options.destination : new google.maps.LatLng(options.destination[0], options.destination[1]);
@@ -1223,7 +1223,7 @@ GMaps.prototype.getRoutes = function(options) {
   delete request_options.callback;
 
   var self = this,
-      service = new google.maps.DirectionsService();
+          service = new google.maps.DirectionsService();
 
   service.route(request_options, function(result, status) {
     if (status === google.maps.DirectionsStatus.OK) {
@@ -1272,7 +1272,7 @@ GMaps.prototype.getElevations = function(options) {
         callback(result, status);
       }
     });
-  //path request
+    //path request
   } else {
     var pathRequest = {
       path : options.locations,
@@ -1280,7 +1280,7 @@ GMaps.prototype.getElevations = function(options) {
     };
 
     service.getElevationAlongPath(pathRequest, function(result, status) {
-     if (callback && typeof(callback) === "function") {
+      if (callback && typeof(callback) === "function") {
         callback(result, status);
       }
     });
@@ -1306,7 +1306,7 @@ GMaps.prototype.drawRoute = function(options) {
           strokeOpacity: options.strokeOpacity,
           strokeWeight: options.strokeWeight
         });
-        
+
         if (options.callback) {
           options.callback(e[e.length - 1]);
         }
@@ -1342,7 +1342,7 @@ GMaps.prototype.travelRoute = function(options) {
 
         //end callback
         if (e.length > 0 && options.end) {
-           options.end(e[e.length - 1]);
+          options.end(e[e.length - 1]);
         }
       }
     });
@@ -1360,7 +1360,7 @@ GMaps.prototype.travelRoute = function(options) {
 
 GMaps.prototype.drawSteppedRoute = function(options) {
   var self = this;
-  
+
   if (options.origin && options.destination) {
     this.getRoutes({
       origin: options.origin,
@@ -1393,7 +1393,7 @@ GMaps.prototype.drawSteppedRoute = function(options) {
 
         //end callback
         if (e.length > 0 && options.end) {
-           options.end(e[e.length - 1]);
+          options.end(e[e.length - 1]);
         }
       }
     });
@@ -1495,7 +1495,7 @@ GMaps.prototype.checkMarkerGeofence = function(marker, outside_callback) {
 
 GMaps.prototype.toImage = function(options) {
   var options = options || {},
-      static_map_options = {};
+          static_map_options = {};
 
   static_map_options['size'] = options['size'] || [this.el.clientWidth, this.el.clientHeight];
   static_map_options['lat'] = this.getCenter().lat();
@@ -1503,7 +1503,7 @@ GMaps.prototype.toImage = function(options) {
 
   if (this.markers.length > 0) {
     static_map_options['markers'] = [];
-    
+
     for (var i = 0; i < this.markers.length; i++) {
       static_map_options['markers'].push({
         lat: this.markers[i].getPosition().lat(),
@@ -1514,7 +1514,7 @@ GMaps.prototype.toImage = function(options) {
 
   if (this.polylines.length > 0) {
     var polyline = this.polylines[0];
-    
+
     static_map_options['polyline'] = {};
     static_map_options['polyline']['path'] = google.maps.geometry.encoding.encodePath(polyline.getPath());
     static_map_options['polyline']['strokeColor'] = polyline.strokeColor
@@ -1527,8 +1527,8 @@ GMaps.prototype.toImage = function(options) {
 
 GMaps.staticMapURL = function(options){
   var parameters = [],
-      data,
-      static_root = 'http://maps.googleapis.com/maps/api/staticmap';
+          data,
+          static_root = 'http://maps.googleapis.com/maps/api/staticmap';
 
   if (options.url) {
     static_root = options.url;
@@ -1538,7 +1538,7 @@ GMaps.staticMapURL = function(options){
   static_root += '?';
 
   var markers = options.markers;
-  
+
   delete options.markers;
 
   if (!markers && options.marker) {
@@ -1753,7 +1753,7 @@ GMaps.createPanorama = function(options) {
   delete options.lng;
 
   var streetview_events = ['closeclick', 'links_changed', 'pano_changed', 'position_changed', 'pov_changed', 'resize', 'visible_changed'],
-      streetview_options = extend_object({visible : true}, options);
+          streetview_options = extend_object({visible : true}, options);
 
   for (var i = 0; i < streetview_events.length; i++) {
     delete streetview_options[streetview_events[i]];
@@ -1864,7 +1864,7 @@ GMaps.geocode = function(options) {
   delete options.lat;
   delete options.lng;
   delete options.callback;
-  
+
   this.geocoder.geocode(options, function(results, status) {
     callback(results, status);
   });
@@ -1950,33 +1950,33 @@ google.maps.Marker.prototype.getId = function() {
 // https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array/indexOf
 if (!Array.prototype.indexOf) {
   Array.prototype.indexOf = function (searchElement /*, fromIndex */ ) {
-      "use strict";
-      if (this == null) {
-          throw new TypeError();
-      }
-      var t = Object(this);
-      var len = t.length >>> 0;
-      if (len === 0) {
-          return -1;
-      }
-      var n = 0;
-      if (arguments.length > 1) {
-          n = Number(arguments[1]);
-          if (n != n) { // shortcut for verifying if it's NaN
-              n = 0;
-          } else if (n != 0 && n != Infinity && n != -Infinity) {
-              n = (n > 0 || -1) * Math.floor(Math.abs(n));
-          }
-      }
-      if (n >= len) {
-          return -1;
-      }
-      var k = n >= 0 ? n : Math.max(len - Math.abs(n), 0);
-      for (; k < len; k++) {
-          if (k in t && t[k] === searchElement) {
-              return k;
-          }
-      }
+    "use strict";
+    if (this == null) {
+      throw new TypeError();
+    }
+    var t = Object(this);
+    var len = t.length >>> 0;
+    if (len === 0) {
       return -1;
+    }
+    var n = 0;
+    if (arguments.length > 1) {
+      n = Number(arguments[1]);
+      if (n != n) { // shortcut for verifying if it's NaN
+        n = 0;
+      } else if (n != 0 && n != Infinity && n != -Infinity) {
+        n = (n > 0 || -1) * Math.floor(Math.abs(n));
+      }
+    }
+    if (n >= len) {
+      return -1;
+    }
+    var k = n >= 0 ? n : Math.max(len - Math.abs(n), 0);
+    for (; k < len; k++) {
+      if (k in t && t[k] === searchElement) {
+        return k;
+      }
+    }
+    return -1;
   }
 }

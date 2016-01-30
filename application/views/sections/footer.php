@@ -112,7 +112,10 @@
 
 </div>
 
-<div id="go-top"><a class="smoothscroll" title="Back to Top" href="#intro"><i class="icon-up-open"></i></a></div>
+<div id="go-top">
+    <a class="smoothscroll" title="Back to Top" href="#topmost">
+        <i class="fa fa-chevron-up"></i>
+    </a></div>
 <!-- Scripts -->
 
 <script src="../assets/js/jquery.min.js"></script>
