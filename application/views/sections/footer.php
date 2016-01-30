@@ -70,9 +70,8 @@
                             <section>
                                 <h3 class="icon fa-comment">Social</h3>
                                 <p>
-                                    <a href="#">@untitled-corp</a><br />
-                                    <a href="#">linkedin.com/untitled</a><br />
-                                    <a href="#">facebook.com/untitled</a>
+                                    <a href="https://twitter.com/RCCGHMP">@RCCGHMP</a><br />
+                                    <a href="https://www.facebook.com/RCCG-His-Majestys-Place-Zone-10-1494224137492858/?ref=ts&fref=ts" target="_blank">facebook.com/RCCG His Majesty Place</a>
                                 </p>
                             </section>
                         </div>

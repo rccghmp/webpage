@@ -37,55 +37,26 @@
         <!-- Features -->
         <section id="features">
             <header class="style1">
-                <h2>Dolor consequat feugiat amet veroeros</h2>
-                <p>Feugiat dolor nullam orci pretium phasellus justo</p>
+                <h2>We Meet On</h2>
             </header>
             <div class="feature-list">
                 <div class="row">
                     <div class="6u 12u(mobile)">
                         <section>
-                            <h3 class="icon fa-comment">Mattis velit diam vulputate</h3>
-                            <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
+                            <h3 class="icon fa-book">Tuesdays [Bible Study | 06:00pm]</h3>
+                            <p>2 Timothy 2:15 - Study to shew thyself approved unto God, a workman that needeth not to be ashamed, rightly dividing the word of truth. </p>
                         </section>
                     </div>
                     <div class="6u 12u(mobile)">
                         <section>
-                            <h3 class="icon fa-refresh">Lorem ipsum dolor sit veroeros</h3>
-                            <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
-                        </section>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="6u 12u(mobile)">
-                        <section>
-                            <h3 class="icon fa-picture-o">Pretium phasellus justo lorem</h3>
-                            <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
-                        </section>
-                    </div>
-                    <div class="6u 12u(mobile)">
-                        <section>
-                            <h3 class="icon fa-cog">Tempus sed pretium orci</h3>
-                            <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
-                        </section>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="6u 12u(mobile)">
-                        <section>
-                            <h3 class="icon fa-wrench">Aliquam consequat et feugiat</h3>
-                            <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
-                        </section>
-                    </div>
-                    <div class="6u 12u(mobile)">
-                        <section>
-                            <h3 class="icon fa-check">Dolore laoreet aliquam mattis</h3>
-                            <p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
+                            <h3 class="icon fa-medkit">Thursdays [Faith Clinic | 06:00pm]</h3>
+                            <p>2 Timothy 2:15 - Study to shew thyself approved unto God, a workman that needeth not to be ashamed, rightly dividing the word of truth. </p>
                         </section>
                     </div>
                 </div>
             </div>
             <ul class="actions actions-centered">
-                <li><a href="#" class="button style1 big">Get Started</a></li>
+                <!--<li><a href="#" class="button style1 big">Get Started</a></li>-->
                 <li><a href="#" class="button style2 big">More Info</a></li>
             </ul>
         </section>
@@ -95,14 +66,24 @@
 
 <!-- Highlights -->
 <div class="wrapper style3">
-    <div class="title">The Endorsements</div>
+    <div class="title">Meet Our Pastors</div>
     <div id="highlights" class="container">
         <div class="row 150%">
             <div class="4u 12u(mobile)">
                 <section class="highlight">
-                    <a href="#" class="image featured"><img src="../assets/images/pic02.jpg" alt="" /></a>
-                    <h3><a href="#">Aliquam diam consequat</a></h3>
-                    <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+                    <a href="#" class="image featured"><img src="../assets/images/uploads/pba.jpg" alt="" /></a>
+                    <h3><a href="#">Pastor Bisi Akande</a></h3>
+                    <p>He is a mentor to many people across different platforms with a deep love for youths.</p>
+                    <ul class="actions">
+                        <li><a href="http://bisiakandeonline.com/" target="_blank" class="button style1">Read More</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="4u 12u(mobile)">
+                <section class="highlight">
+                    <a href="#" class="image featured"><img src="../assets/images/uploads/pbabs.jpg" alt="" /></a>
+                    <h3><a href="#">Pastor Babalola</a></h3>
+                    <p>He is a career and preacher of the word, impact lifes through the word in a way breeze enters the poles of the skin.</p>
                     <ul class="actions">
                         <li><a href="#" class="button style1">Learn More</a></li>
                     </ul>
@@ -110,21 +91,11 @@
             </div>
             <div class="4u 12u(mobile)">
                 <section class="highlight">
-                    <a href="#" class="image featured"><img src="../assets/images/pic03.jpg" alt="" /></a>
-                    <h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-                    <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+                    <a href="#" class="image featured"><img src="../assets/images/uploads/pval.jpg" alt="" /></a>
+                    <h3><a href="#">Pastor Valentine</a></h3>
+                    <p>He is the pastor of the youth to the call. Never resting, never weary, always active and seeking the next life to impact.</p>
                     <ul class="actions">
-                        <li><a href="#" class="button style1">Learn More</a></li>
-                    </ul>
-                </section>
-            </div>
-            <div class="4u 12u(mobile)">
-                <section class="highlight">
-                    <a href="#" class="image featured"><img src="../assets/images/pic04.jpg" alt="" /></a>
-                    <h3><a href="#">Mattis tempus lorem</a></h3>
-                    <p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-                    <ul class="actions">
-                        <li><a href="#" class="button style1">Learn More</a></li>
+                        <li><a href="#" class="button style1">Know More</a></li>
                     </ul>
                 </section>
             </div>

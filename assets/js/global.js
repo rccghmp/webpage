@@ -8,7 +8,8 @@ $(document).ready(function() {
         imageUrls: [
             '../assets/images/banner.jpg',
             '../assets/images/banner2.jpg',
-            '../assets/images/banner3.jpg'
+            '../assets/images/banner3.jpg',
+            '../assets/images/banner4.jpg'
         ],
         fadeSpeed: 2000,
         duration: 5000,

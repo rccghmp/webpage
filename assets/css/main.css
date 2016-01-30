@@ -1368,7 +1368,7 @@
 		input[type="reset"].style1,
 		button.style1,
 		.button.style1 {
-			background: #e97770 url("images/overlay.png");
+			background: #e97770 url("/assets/images/overlay.png");
 			color: #fff;
 		}
 
@@ -1419,7 +1419,7 @@
 		input[type="reset"].style3,
 		button.style3,
 		.button.style3 {
-			background: #2f333b url("images/overlay.png");
+			background: #2f333b url("/assets/images/overlay.png");
 			color: #fff;
 		}
 
@@ -1493,7 +1493,7 @@
 			position: relative;
 			display: inline-block;
 			color: #fff;
-			background: #2f333b url("images/overlay.png");
+			background: #2f333b url("/assets/images/overlay.png");
 			border-radius: 1em;
 			text-align: center;
 		}
@@ -1562,13 +1562,13 @@
 			}
 
 		.wrapper.style1 {
-			background: #e97770 url("images/overlay.png");
+			background: #e97770 url("/assets/images/overlay.png");
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
 			.wrapper.style1 .title {
-				background: #e97770 url("images/overlay.png");
+				background: #e97770 url("/assets/images/overlay.png");
 				color: #fff;
 			}
 
@@ -1586,11 +1586,11 @@
 			}
 
 		.wrapper.style3 {
-			background: #f3f3f3 url("images/overlay.png");
+			background: #f3f3f3 url("/assets/images/overlay.png");
 		}
 
 			.wrapper.style3 .title {
-				background: #f3f3f3 url("images/overlay.png");
+				background: #f3f3f3 url("/assets/images/overlay.png");
 				color: #484d55;
 			}
 
@@ -1679,7 +1679,7 @@
 			}
 
 		#footer-wrapper .title {
-			background: #282b34 url("images/overlay.png");
+			background: #282b34 url("/assets/images/overlay.png");
 			color: #eee;
 		}
 
@@ -1697,7 +1697,7 @@
 		}
 
 		#footer-wrapper .feature-list h3:before {
-			background: #3d4249 url("images/overlay.png");
+			background: #3d4249 url("/assets/images/overlay.png");
 		}
 
 /* Logo */
@@ -2497,7 +2497,7 @@
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background: #242730 url("images/overlay.png");
+				background: #242730 url("/assets/images/overlay.png");
 				box-shadow: inset -3px 0px 4px 0px rgba(0, 0, 0, 0.1);
 			}
 
