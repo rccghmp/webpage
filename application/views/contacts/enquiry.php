@@ -7,6 +7,9 @@
  */
 ?>
 
+<script src="../assets/js/gmaps.js"></script>
+<script src="../assets/js/contact-enquiry.js"></script>
+
 <?php $data['title'] = "Security Check Point"; ?>
 
 </div>
@@ -16,12 +19,10 @@
 <div class="wrapper style2">
     <div class="title">Locate Us</div>
     <div id="main" class="container">
-        <!-- Features -->
-        <section id="features">
-            <header class="style1">
-                <p>Feugiat dolor nullam orci pretium phasellus justo</p>
-            </header>
-        </section>
+        <div id="map">
 
+            <p class="map-error">Something went wrong... Unable to load map... Please try to enable javascript</p>
+
+        </div> <!-- end map -->
     </div>
 </div>

@@ -14,30 +14,24 @@
 
 <!-- Intro -->
 <div id="intro-wrapper" class="wrapper style1">
-    <div class="title">The Introduction</div>
+    <div class="title">Here We Are</div>
     <section id="intro" class="container">
         <p class="style1">So in case you were wondering what this is all about ...</p>
         <p class="style2">
-            Escape Velocity is a free responsive<br class="mobile-hide" />
-            site template by <a href="http://html5up.net" class="nobr">HTML5 UP</a>
+            Never let success get to your head <br class="mobile-hide" />and never let failure gets to your heart
         </p>
-        <p class="style3">It's <strong>responsive</strong>, built on <strong>HTML5</strong> and <strong>CSS3</strong>, and released for
-            free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0 license</a>, so use it for any of
-            your personal or commercial projects &ndash; just be sure to credit us!</p>
-        <ul class="actions">
-            <li><a href="#" class="button style3 big">Proceed</a></li>
-        </ul>
+        <p>...PBA</p>
     </section>
 </div>
 
 <!-- Main -->
 <div class="wrapper style2">
-    <div class="title">The Details</div>
+    <div class="title">Upcoming</div>
     <div id="main" class="container">
 
         <!-- Image -->
         <a href="#" class="image featured">
-            <img src="../assets/images/pic01.jpg" alt="" />
+            <img src="../assets/images/uploads/201602hgs.jpg" alt="" />
         </a>
 
         <!-- Features -->

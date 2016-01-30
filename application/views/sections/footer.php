@@ -12,13 +12,11 @@
 
 <!-- Footer -->
 <div id="footer-wrapper" class="wrapper">
-    <div class="title">The Rest Of It</div>
+    <div class="title">Get In Touch</div>
     <div id="footer" class="container">
         <header class="style1">
-            <h2>Ipsum sapien elementum portitor?</h2>
             <p>
-                Sed turpis tortor, tincidunt sed ornare in metus porttitor mollis nunc in aliquet.<br />
-                Nam pharetra laoreet imperdiet volutpat etiam consequat feugiat.
+                Subscribe to our newsletter and get prayer points, life changing declarations, powerful life tips and career progression counsels.
             </p>
         </header>
         <hr />
@@ -60,11 +58,11 @@
                     <div class="row">
                         <div class="6u 12u(mobile) my-cubes">
                             <section>
-                                <h3 class="icon fa-home">Mailing Address</h3>
+                                <h3 class="icon fa-home">Church Address</h3>
                                 <p>
-                                    Untitled Corporation<br />
-                                    1234 Somewhere Rd #987<br />
-                                    Nashville, TN 00000-0000
+                                    4, Kofoworola Crescent,<br>
+                                    Off Oyadiran Estate,<br>
+                                    Sabo, Yaba Lagos.
                                 </p>
                             </section>
                         </div>
@@ -84,7 +82,8 @@
                             <section>
                                 <h3 class="icon fa-envelope">Email</h3>
                                 <p>
-                                    <a href="#">info@untitled.tld</a>
+                                    <a href="mailto:hismajestyplace@gmail.com">hismajestyplace@gmail.com</a>
+                                    <a href="mailto:enquiry@rccghmp.org">enquiry@rccghmp.org</a>
                                 </p>
                             </section>
                         </div>
@@ -92,7 +91,7 @@
                             <section>
                                 <h3 class="icon fa-phone">Phone</h3>
                                 <p>
-                                    (000) 555-0000
+                                   (+234) 0705majesty
                                 </p>
                             </section>
                         </div>
@@ -104,13 +103,17 @@
     </div>
     <div id="copyright">
         <ul>
-            <li>&copy; <?php echo $current_year; ?></li><li>Design by: <a href="mailto:rccghmp1@gmail.com">RCCG HMP Tech Team.</a></li>
+            <li>
+                &copy; <?php echo $current_year; ?><br>
+                Design by: <a href="mailto:rccghmp1@gmail.com">RCCG HMP Tech Team.</a>
+            </li>
         </ul>
     </div>
 </div>
 
 </div>
 
+<div id="go-top"><a class="smoothscroll" title="Back to Top" href="#intro"><i class="icon-up-open"></i></a></div>
 <!-- Scripts -->
 
 <script src="../assets/js/jquery.min.js"></script>
@@ -120,6 +123,7 @@
 <script src="../assets/js/util.js"></script>
 <!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
 <script src="../assets/js/main.js"></script>
+<script src="../assets/js/background.cycle.js"></script>
 
 </body>
 </html>
