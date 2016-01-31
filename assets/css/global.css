@@ -8,6 +8,34 @@ a {
     text-decoration: none !important;
 }
 
+.row li.loader- {
+    display: none;
+}
+
+form .message-displayer {
+    display: none;
+    text-align: center;
+    color: #e97770;
+    font-size: 1.1em;
+    padding-bottom: 5px;
+}
+
+.-cursor-control {
+    cursor: not-allowed;
+    pointer-events: none;
+    text-decoration: none;
+}
+
+.-small-lazy-loader {
+    height: 40px;
+    display: block;
+    background: url('../images/loader.gif') no-repeat center center;
+    background-size: 40px 40px;
+    width: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .wrapper {
     padding: 3em 0 5em 0 !important;
 }
@@ -119,10 +147,6 @@ a li.fa-youtube-square:hover {
 
 
 /* handles footer */
-#footer-wrapper {
-
-}
-
 #footer-wrapper.wrapper  {
     padding: 1em 0 0 0 !important;
 }

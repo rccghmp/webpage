@@ -55,13 +55,13 @@
                     <div class="6u 12u(mobile)">
                         <section>
                             <h3 class="icon fa-medkit">Thursdays [Faith Clinic | 06:00pm]</h3>
-                            <p>1 Pet. 2:24) - Who Himself bore our sins in His own body on the tree, that we, having died to sins, might live for righteousness—by whose stripes you were healed. </p>
+                            <p>1 Pet. 2:24) - ...by whose stripes you were healed. </p>
                         </section>
                     </div>
                     <div class="6u 12u(mobile)">
                         <section>
-                            <h3 class="icon fa-gift">Sunday Service [07:45am - 10:30am]</h3>
-                            <p>2 Timothy 2:15 - Study to shew thyself approved unto God, a workman that needeth not to be ashamed, rightly dividing the word of truth. </p>
+                            <h3 class="icon fa-gift">Sundays [07:45am - 10:30am]</h3>
+                            <p>1 Thess. 5:16-18 - Rejoice evermore. </p>
                         </section>
                     </div>
                 </div>

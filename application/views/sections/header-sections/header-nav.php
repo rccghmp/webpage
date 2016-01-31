@@ -59,6 +59,6 @@
             </ul>
         </li>
         <li><a href="#">eGIVING</a></li>
-        <li><a href="<?php echo base_url() ?>contacts/enquiry">CONTACT US</a></li>
+        <li><a href="<?php echo base_url() ?>contacts/">CONTACT US</a></li>
     </ul>
 </nav>

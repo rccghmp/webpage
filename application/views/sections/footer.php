@@ -25,25 +25,33 @@
 
                 <!-- Contact Form -->
                 <section>
-                    <form method="post" action="#">
+                    <form method="post" class="enquiry-form">
+                        <div class="message-displayer"></div>
                         <div class="row 50%">
                             <div class="6u 12u(mobile)">
-                                <input type="text" name="name" id="contact-name" placeholder="Name" />
+                                <input type="text" class="contact-name" name="name" id="contact-name" placeholder="Name" />
                             </div>
                             <div class="6u 12u(mobile)">
-                                <input type="text" name="email" id="contact-email" placeholder="Email" />
+                                <input type="text" class="email" name="email" id="contact-email" placeholder="Email" />
+                                <input type="hidden" class="submission-url" value="<?php echo base_url(); ?>contacts/enquiry" />
                             </div>
                         </div>
                         <div class="row 50%">
                             <div class="12u">
-                                <textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
+                                <input type="text" class="phone-no" name="phone" id="contact-phone" placeholder="Phone No." />
+                            </div>
+                        </div>
+                        <div class="row 50%">
+                            <div class="12u">
+                                <textarea name="message" class="contact-message" id="contact-message" placeholder="Message" rows="4"></textarea>
                             </div>
                         </div>
                         <div class="row">
                             <div class="12u">
                                 <ul class="actions">
-                                    <li><input type="submit" class="style1" value="Send" /></li>
-                                    <li><input type="reset" class="style2" value="Reset" /></li>
+                                    <li><input type="submit" class="style1 submit-send" value="Send" /></li>
+                                    <li><input type="reset" class="style2 submit-reset" value="Reset" /></li>
+                                    <li class="loader- -small-lazy-loader"></li>
                                 </ul>
                             </div>
                         </div>
@@ -125,6 +133,7 @@
 <script src="../assets/js/util.js"></script>
 <!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
 <script src="../assets/js/main.js"></script>
+<script src="../assets/js/inline-operations.js"></script>
 <script src="../assets/js/background.cycle.js"></script>
 
 </body>
