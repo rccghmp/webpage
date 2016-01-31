@@ -35,16 +35,26 @@ jQ(document).ready(function(){
                         jQ('.enquiry-form .loader-').css("display", "none");
 
                         try{
-                            data = JSON.parse(window.ratings_full_response);
-                        }
-                        catch(e)
-                        {
+                            data = JSON.parse(window.form_full_response);
 
+                            if(data['status'] === true) {
+                                var msg = "Enquiry received! Thank You.";
+                                var color = "#60b044";
+                            } else {
+                                var msg = "Oops! Something went wrong";
+                                var color = "#e97770";
+                            }
                         }
+                        catch(e){}
+
+                        jQ('form .message-displayer').css('display', 'block');
+                        jQ('form .message-displayer').css('color', color);
+                        jQ('form .message-displayer').html(msg);
+                        clearForm();
                     })
                     .fail(function () {
-                        window.ratings_full_response = pRating.responseText;
                         jQ('.enquiry-form .loader-').css("display", "none");
+                        jQ('form .message-displayer').css('display', 'none');
                     })
                     .always(function () {
                         //jQ('.enquiry-form .loader-').css("display", "none");
@@ -57,3 +67,10 @@ jQ(document).ready(function(){
     });
 
 });
+
+function clearForm() {
+    jQ('.enquiry-form .contact-name').val('');
+    jQ('.enquiry-form .email').val('');
+    jQ('.enquiry-form .phone-no').val('');
+    jQ('.enquiry-form .contact-message').val('');
+}

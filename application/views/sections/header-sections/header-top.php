@@ -14,8 +14,8 @@
                 <a href="https://www.facebook.com/RCCG-His-Majestys-Place-Zone-10-1494224137492858/?ref=ts&fref=ts" target="_blank"><li class="fa fa-facebook-square"></li></a>
                 <a href="https://twitter.com/RCCGHMP" target="_blank"><li class="fa fa-twitter-square"></li></a>
                 <a href="http://www.instagram.com/rccghmp" target="_blank"><li class="fa fa-instagram"></li></a>
-                <a href="https://plus.google.com/+rccghmp1" target="_blank"><li class="fa fa-google-plus-square"></li></a>
-                <a href="http://www.youtube.com/user/rccghmp1" target="_blank"><li class="fa fa-youtube-square"></li></a>
+                <a href="https://plus.google.com/u/1/107424706777417469865/about?hl=en" target="_blank"><li class="fa fa-google-plus-square"></li></a>
+                <a href="https://www.youtube.com/channel/UCBYLMlMvdlXEZ41b4fsMLQA" target="_blank"><li class="fa fa-youtube-square"></li></a>
             </ul>
         </div>
 

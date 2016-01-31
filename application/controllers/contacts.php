@@ -17,9 +17,12 @@ class Contacts extends CI_Controller {
 
 	public function enquiry() {
 		$current_date_time = date('Y-m-d H:i:s');
-		$enquiry_id = $current_date_time. ','. rand(292783, 9383832);
+		$rand_no = rand(1234, 4321);
+		$enquiry_id = $current_date_time .','. $rand_no;
 
 		$response = array();
+		$response['status'] = false;
+
 		$contact_name = $this->input->post('contact_name');
 		$email = $this->input->post('email');
 		$phone_no = $this->input->post('phone_no');
@@ -35,9 +38,11 @@ class Contacts extends CI_Controller {
 		);
 
 		$this->enquiries_model->insert_enquiry($data);
+		if($this->db->affected_rows() >= 1) {
+			$response['status'] = true;
+			$response['msg'] = 'Data Saved';
+		}
 
-		$response['status'] = true;
-		$response['contact_name'] = $contact_name;
 		echo json_encode($response);
 		return;
 	}
