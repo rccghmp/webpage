@@ -199,34 +199,34 @@ class Church extends CI_Controller {
 	}
 
 	public function insertSmsConfig() {
-		$response['title'] = "";
+//		$response['title'] = "";
+//
+//		if(!empty($this->input->post('account_holder'))
+//			&& !empty($this->input->post('account_password'))
+//			&& !empty($this->input->post('api_base_url'))) {
+//
+//			$curDate = getCurDateStamp();
+//			$cipherpassword = $this->encrypt->encode(trim($this->input->post('account_password')));
+//
+//			$data = array(
+//				'account_holder' => trim($this->input->post('account_holder')),
+//				'account_password' => $cipherpassword,
+//				'api_base_url' => trim($this->input->post('api_base_url')),
+//				'single_sms_url' => trim($this->input->post('single_sms_url')),
+//				'account_balance_url' => trim($this->input->post('account_balance_url')),
+//				'multi_sms_url' => trim($this->input->post('multi_sms_url')),
+//				'created_at' => $curDate
+//			);
+//
+//			//Transfering data to Model
+//			$this->smsconfig_model->insert_config_settings($data);
+//			$response['insertSmsConfigMsg'] = 'Settings was done successfully.';
 
-		if(!empty($this->input->post('account_holder'))
-			&& !empty($this->input->post('account_password'))
-			&& !empty($this->input->post('api_base_url'))) {
-
-			$curDate = getCurDateStamp();
-			$cipherpassword = $this->encrypt->encode(trim($this->input->post('account_password')));
-
-			$data = array(
-				'account_holder' => trim($this->input->post('account_holder')),
-				'account_password' => $cipherpassword,
-				'api_base_url' => trim($this->input->post('api_base_url')),
-				'single_sms_url' => trim($this->input->post('single_sms_url')),
-				'account_balance_url' => trim($this->input->post('account_balance_url')),
-				'multi_sms_url' => trim($this->input->post('multi_sms_url')),
-				'created_at' => $curDate
-			);
-
-			//Transfering data to Model
-			$this->smsconfig_model->insert_config_settings($data);
-			$response['insertSmsConfigMsg'] = 'Settings was done successfully.';
-
-		}
+	//	}
 
 		//redirect(base_url('church/configSms'));
 		//Loading View
-		$this->load->view('church/configurations/sms/sms_settings', $response);
+	//	$this->load->view('church/configurations/sms/sms_settings', $response);
 	}
 	/* /this section handles the configurations part */
 }

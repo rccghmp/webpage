@@ -16,7 +16,7 @@
 <div id="intro-wrapper" class="wrapper style1">
     <div class="title">The Introduction</div>
     <section id="intro" class="container">
-        <p class="style1">So in case you were wondering what this is all about ...</p>
+        <p class="style1">So in case you were wondering what this is all about DDDRDDRRR ...</p>
         <p class="style2">
             Escape Velocity is a free responsive<br class="mobile-hide" />
             site template by <a href="http://html5up.net" class="nobr">HTML5 UP</a>
